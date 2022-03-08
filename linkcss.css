@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+div{
+    margin: 0 auto;
+    width: 357px;
+    height: auto;
+}
+strong{
+    font-size: 16px;
+}
+p{
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+.b{
+    padding: 0;
+}
+.b li{
+    display: inline-table;
+}
+.import{
+    color: red;
+    font-size: 24px;
+}
+.input-box{
+    margin: 10px 0;
+    padding: 3px 6px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+}
+#details{
+    margin: 10px 0;
+    padding: 3px 6px;
+    max-width: 342.5px;
+    min-width: 342.5px;
+    max-height: 120px;
+    min-height: 120px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.button{
+    width: 354.5px;
+    height: 60px;
+}
+.b{
+    width: 357px;
+    height: auto;
+    margin: 10px auto;
+}
+.select{
+    width: 176px;
+    height: 50px;
+}

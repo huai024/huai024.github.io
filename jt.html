@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title>处理表单</title>
+    <script src="./nocopy.js"></script>
+</head>
+
+<body>
+    <input checked id="clbd" name="tab" type="radio">
+    <input id="bdyl" name="tab" type="radio">
+    <input id="cklc" name="tab" type="radio">
+    <div class="navbar">
+        <label for="clbd">
+            <a class="navbar_tiem clbd" id="123">处理表单</a>
+        </label>
+        <label for="bdyl">
+            <a class="navbar_tiem bdyl">表单预览</a>
+        </label>
+        <label for="cklc">
+            <a class="navbar_tiem cklc">查看流程</a>
+        </label>
+    </div>
+    <div class="clbd" style="height: calc(100vh);">
+        <iframe src="./clbd.html" height="100%" width="100%" frameborder="0"></iframe>
+    </div>
+    <div class="bdyl" style="height: calc(100vh); overflow: hidden;">
+        <iframe id="if2" src="./spb.html" height="100%" width="100%" style="margin-top: 50px; " zoom=1 frameborder="0"></iframe>
+        <!--
+        <iframe src="./shenpibiao2.html" height="100%" width="100%" frameborder="0"></iframe>
+          -->  
+    </div>
+</body>
+<script>
+    wy = document.body.clientHeight - 50;
+    //console.log(wy);
+    //document.getElementById("if2").style.height = wy + "px";
+</script>
+</html>

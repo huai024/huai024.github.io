@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map_img img {
+            width: 750px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <template>
+        <div>
+            <div :style="'height:'+windowHeight+'px'">
+                <div id="map_img">
+                    <img :src="mapImg" />
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+<script>
+    import mapImg from '@/assets/images/map.png';
+    import PinchZoom from '@/utils/pinch-zoom';
+    export default {
+        name: "mapIndex",
+        data() {
+            return {
+                mapImg,
+                windowHeight: window.innerHeight,
+            }
+        },
+        mounted() {
+            let myElement = document.getElementById("map_img");
+            let pz = new PinchZoom(myElement, {
+                minZoom: 4,
+                maxZoom: 12,
+                zoomFactor: 4,
+            });
+        }
+    }
+</script>
+
+</html>
